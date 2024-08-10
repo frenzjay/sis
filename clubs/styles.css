@@ -1,0 +1,193 @@
+body, h1, h2, p, ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+header {
+    background-color: #283593;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    position: relative;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 50px;
+    height: 50px;
+}
+
+h1 {
+    font-size: 1.8em;
+    font-weight: bold;
+    margin-left: 70px;
+}
+
+.club-title {
+    font-size: 2.5em;
+    font-weight: bold;
+    margin-top: 20px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+main {
+    padding: 20px;
+}
+
+.clubs ul {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 0;
+}
+
+.clubs li {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-bottom: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode: overlay;
+}
+
+.clubs li::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 5%;
+    bottom: 0;
+    left: 0;
+    background: linear-gradient(to left, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8) 100%);
+    z-index: 0;
+    pointer-events: none;
+}
+
+.clubs li span {
+    position: relative;
+    z-index: 1;
+    width: 50%;
+    padding-left: 20px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.8em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.bkd {
+    background: linear-gradient(45deg, #ff6a00, #ee0979), url('https://flyingketchup.ph/wp-content/uploads/2018/09/barkadakontradroga-768x512.png');
+}
+
+.popdev {
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4), url('images/popdev-background.jpg');
+}
+
+.chess {
+    background: linear-gradient(45deg, #333, #ddd), url('https://i.pinimg.com/564x/2c/bc/57/2cbc5782240c4aace08c9e0cd8d334ed.jpg');
+}
+
+.yes-o {
+    background: linear-gradient(45deg, #56ab2f, #a8e063), url('https://scontent.fmnl8-6.fna.fbcdn.net/v/t1.18169-9/18528064_1401001899991789_4464186686802463276_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=1d70fc&_nc_eui2=AeHeJZVuBiQQrVg45No4d7SQpm1i4i7AvZ2mbWLiLsC9nTccZfJ08oQ_Cbp99U5zsloIxv31ZkaydcVvmgNrPtXG&_nc_ohc=KP-rvQfNlEoQ7kNvgGfTO5r&_nc_ht=scontent.fmnl8-6.fna&oh=00_AYBo9ByPP_SZJze19UyG2Tb2R0vwgH55sbl9G9BLJey4eg&oe=66DE515D');
+}
+
+.math {
+    background: linear-gradient(45deg, #007991, #78ffd6), url('https://i.pinimg.com/564x/98/3d/91/983d91f5c7aeabc155e7c2f97e8fc5cd.jpg');
+}
+
+.history {
+    background: linear-gradient(45deg, #ff6f61, #de1a1a), url('https://cdni.iconscout.com/illustration/premium/thumb/history-school-5526271-4620031.png?f=webp');
+}
+
+.science {
+    background: linear-gradient(45deg, #36d1dc, #5b86e5), url('https://img.freepik.com/free-vector/flat-science-illustration-biotechnology-concept_23-2148891611.jpg?t=st=1723267296~exp=1723270896~hmac=f59c701a6790fa8883d1dbaf52a24e94974ddf919dcdaee19e6791b68742e879&w=740');
+}
+
+.english {
+    background: linear-gradient(45deg, #ee9ca7, #ffdde1), url(https://as2.ftcdn.net/v2/jpg/03/82/99/09/1000_F_382990960_ieouyOAohFf3aSXZglhVljBfIZAWmTrK.jpg');
+}
+
+.creative-media {
+    background: linear-gradient(45deg, #a8ff78, #78ffd6), url('https://previews.123rf.com/images/ovocheva/ovocheva2001/ovocheva200100006/138496536-social-media-concept-with-characters-creative-flat-vector-illustration-for-marketing-material.jpg');
+}
+
+.arts {
+    background: linear-gradient(45deg, #ffafbd, #ffc3a0), url('https://thumbs.dreamstime.com/b/symbol-arts-symbols-various-form-circle-38346081.jpg');
+}
+
+.journalist {
+    background: linear-gradient(45deg, #8e2de2, #4a00e0), url('https://static.vecteezy.com/system/resources/previews/023/517/928/non_2x/journalist-concept-mass-media-news-tv-newspaper-internet-and-radio-journalism-tiny-people-journalists-with-microphones-and-camera-in-live-stream-modern-flat-cartoon-style-illustration-vector.jpg');
+}
+
+.track-field {
+    background: linear-gradient(45deg, #f7b733, #fc4a1a), url('https://cdn.prod.website-files.com/5b44edefca321a1e2d0c2aa6/602c82b31bb67d80952bb4b9_Dimensions-Sports-Track-Field-Introduction.svg');
+}
+
+.basketball {
+    background: linear-gradient(45deg, #e65c00, #f9d423), url('https://www.freevector.com/uploads/vector/preview/19375/sketch_basketball_background.jpg');
+}
+
+.volleyball {
+    background: linear-gradient(45deg, #00b09b, #96c93d), url('https://media.istockphoto.com/id/1305292811/vector/concept-illustration-of-playing-volleyball.jpg?s=612x612&w=0&k=20&c=DV4anVsPjP9q4icvOHPDsYvYG9JreFHwYgkSvqXdbSA=');
+}
+
+.badminton {
+    background: linear-gradient(45deg, #fdfc47, #24fe41), url('https://img.freepik.com/free-vector/badminton-concept-illustration_114360-6977.jpg');
+}
+
+.dance-singing {
+    background: linear-gradient(45deg, #fe8c00, #f83600), url('https://thumbs.dreamstime.com/z/singing-dancing-microphones-young-people-girls-guys-have-fun-karaoke-vector-illustration-happy-sing-dance-stage-138423320.jpg');
+}
+
+.filipino {
+    background: linear-gradient(45deg, #ff512f, #dd2476), url('https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQvd1oXXlVnrE5XOilkabk4Q67ubB7MHn8AgA&s');
+}
+
+.drama {
+    background: linear-gradient(45deg, #c94b4b, #4b134f), url('https://img.freepik.com/free-vector/opera-singers-playing-stage-with-musicians-theatre-performers-wearing-costumes-standing-spotlights-singing-before-audience-flat-cartoon-illustration-drama-performance-concept_74855-13187.jpg');
+}
+
+.broadcasting {
+    background: linear-gradient(45deg, #e1eec3, #f05053), url('https://cdni.iconscout.com/illustration/premium/thumb/broadcasting-4557793-3780530.png');
+}
+
+.sign-language {
+    background: linear-gradient(45deg, #f7971e, #ffd200), url('https://www.shutterstock.com/blog/wp-content/uploads/sites/5/2021/08/ASL-cover-image.jpg');
+}
+
+.stemazing {
+    background: linear-gradient(45deg, #56ccf2, #2f80ed), url('https://www.exxonmobil.co.uk/-/media/unitedkingdom/images/fawley/press-releases/2022/stem-graphic---adobestock.jpeg?usecustomfunctions=1&centercrop=1');
+}
+
+footer {
+    background-color: #283593;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 20px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
